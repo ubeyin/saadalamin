@@ -373,7 +373,7 @@ select:focus::-ms-value {
     width: 39%;
     position: absolute;
     right: 8%;
-    top: 39vw;
+    top: 45vw;
     text-align: center;
 }
 
@@ -382,12 +382,12 @@ select:focus::-ms-value {
     width: 39%;
     position: absolute;
     left: 14%;
-    top: 100vw;
 }
 
 #home #right-ctx p {
     font-size: 0.8rem !important;
 }
+
 
 @media screen and (min-width: 600px) {
     #home>#banner {
@@ -396,13 +396,19 @@ select:focus::-ms-value {
     }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 450px) {
     #home #right-ctx {
         top: 34.0vw;
     }
 
     #home #left-ctx {
-        top: 87.0vw;
+        top: 111.0vw;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #home #left-ctx {
+        top: 99vw;
     }
 }
 
