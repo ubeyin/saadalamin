@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saad Al Amin</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Home page -->
+  <nav id="navbar">
+    <main class="image"></main>
+    <div class="item">
+      <div><a href="index.html">Home</a></div>
+      <div><a href="work.html">My Works</a></div>
+      <div><a href="contact.html">Contact</a></div>
+      <div class="active"><a href="about.html">About</a></div>
+    </div>
+  </nav>
+
+  <div id="about">
+    <div id="main">
+      <div class="q">
+        <div id="quote">
+          <div class="main">
+            <h2 align="center">About Me</h2><br>
+            <p>I am Saad Al Amin. A simple human being on this earth. I have so many dream's. I want to be a Proper
+              Human
+              being. Also I will try to help all those people who needs help for making their CREATIVE dream's come
+              truth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/app.js"></script>
+  <script>
+    setInterval(() => {
+      document.getElementById("about").style.marginTop = document.getElementById("navbar").clientHeight +
+        "px";
+      document.getElementById("about").style.height = (103 - document.getElementById("navbar").clientHeight *
+          0.1364256480218281) +
+        "vh";
+    }, 1);
+  </script>
+</body>
+
+</html>
