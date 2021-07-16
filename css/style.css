@@ -338,9 +338,15 @@ select:focus::-ms-value {
     padding-top: 30px;
     margin-top: 30px;
     background-image: url(../image/saad_al_amin.jpeg);
-    background-size: contain;
+    background-size: 100% 100%;
     background-attachment: scroll;
-   
+}
+
+@media screen and (min-width: 600px) {
+    #home>#banner {
+        height: 100vw;
+        background-size: 100% 100%;
+    }
 }
 
 /* Work Container */
