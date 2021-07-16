@@ -1,1 +1,559 @@
+@charset"UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Poppins);
 
+:root {
+    --blue: #0d6efd;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #d63384;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #198754;
+    --teal: #20c997;
+    --cyan: #0dcaf0;
+    --white: #fff;
+    --grey: #6c757d;
+    --dark-grey: #343a40;
+    --primary: #0d6efd;
+    --secondary: #6c757d;
+    --success: #198754;
+    --info: #0dcaf0;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Poppins, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--light);
+    color: #000;
+}
+
+
+*,
+:after,
+:before {
+    box-sizing: inherit;
+    font-family: "Poppins", sans-serif;
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit;
+    font-family: "Poppins", sans-serif;
+}
+
+@media (prefers-reduced-motion:no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+* {
+    font-family: var(--font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: calc(1.375rem + 1.5vw)
+}
+
+@media (min-width:1200px) {
+    h1 {
+        font-size: 2.5rem
+    }
+}
+
+h2 {
+    font-size: calc(1.325rem + .9vw)
+}
+
+@media (min-width:1200px) {
+    h2 {
+        font-size: 2rem
+    }
+}
+
+h3 {
+    font-size: calc(1.3rem + .6vw)
+}
+
+@media (min-width:1200px) {
+    h3 {
+        font-size: 1.75rem
+    }
+}
+
+h4 {
+    font-size: calc(1.275rem + .3vw)
+}
+
+@media (min-width:1200px) {
+    h4 {
+        font-size: 1.5rem
+    }
+}
+
+h5 {
+    font-size: 1.25rem
+}
+
+h6 {
+    font-size: 1rem
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0a58ca;
+}
+
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    margin-top: 8px;
+    max-width: 70%;
+    min-width: 50px;
+    height: auto;
+    padding: 6px 10px;
+    background: var(--primary);
+    color: #fff;
+    outline: none;
+    font-size: 0.95rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none !important;
+    border: 0;
+    border-radius: .25rem;
+    transition: .15s ease;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+input,textarea {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.475rem 0.85rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input::-ms-expand,textarea::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
+
+input:-moz-focusring,textarea:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #495057;
+}
+
+input:focus,textarea:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: 0 0 4px #ced4da;
+}
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+input::-moz-placeholder,textarea::-moz-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+input::-ms-input-placeholder,textarea::-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+input::placeholder,textarea::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+input:disabled,
+input[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select:focus::-ms-value {
+    color: #495057;
+    background-color: #fff;
+}
+
+/* Nav bar  */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 40px;
+    background: white;
+    font-size: 0.8rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    user-select: none;
+    z-index: 1000;
+}
+
+#navbar>.item {
+    --gutter-x: 1.5rem;
+    --gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    float: left;
+    margin-top: calc(var(--gutter-y) *-1);
+    margin-right: calc(var(--gutter-x)/-2);
+    margin-left: calc(var(--gutter-x)/-2)
+}
+
+#navbar .item>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--gutter-x)/2);
+    padding-left: calc(var(--gutter-x)/2);
+    margin-top: var(--gutter-y);
+    flex: 1 0 0%;
+    text-align: center;
+}
+
+#navbar .item>div {
+    height: 36px;
+    font-size: calc(0.8rem + .02vw);
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    padding-top: 15px;
+}
+
+#navbar>.image {
+    width: 33px !important;
+    height: 33px !important;
+    background: black;
+    border-radius: 100rem;
+    padding: 0 !important;
+    flex: none;
+    margin: 5px;
+    margin-left: 20px;
+    display: inline-block;
+    background-image: url("https://yt3.ggpht.com/WZgN7Pgc22KLA-dr-Iv7b1PnkyP6Q0wCjlXC0YnNSShMIkSOweV--vZe0usne2DRTbNaijL-RA=s88-c-k-c0x00ffffff-no-rj");
+    background-size: cover;
+}
+
+@media (min-width:576.0px) {
+    #navbar>.item {
+        margin-left: 50px;
+        float: right;
+    }
+}
+
+#navbar .item>*.active {
+    background-color: #eee;
+}
+
+#navbar .item>*:hover {
+    background: rgba(0, 0, 0, 0.021);
+}
+
+#navbar .item>*.active:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Container */
+#home,
+#work,
+#contact,
+#about {
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Home Container */
+#home>#banner {
+    width: 100%;
+    height: 80vh;
+    padding-top: 30px;
+    margin-top: 30px;
+    background-image: url(../image/saad_al_amin.jpeg);
+    background-size: contain;
+    background-attachment: scroll;
+   
+}
+
+/* Work Container */
+#work>#gallery {
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    margin-top: 30px;
+    background: var(--light);
+}
+
+#work>#gallery .head {
+    padding: 4px;
+    text-transform: uppercase;
+    background: #555;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 200px;
+    font-size: 0.76rem;
+    text-align: center;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 500px) {
+    #work>#gallery .head {
+        margin-left: 180px;
+        font-size: 0.80rem;
+        font-weight: bolder;
+    }
+}
+
+#work>#gallery .title {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    width: 100%;
+    font-size: 0.65rem;
+}
+
+#work>#gallery .title>p {
+    padding: 10px;
+    margin: 0;
+}
+
+#work>#gallery .title>p:before {
+    content: "New ";
+    color: red;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+img:hover {
+    filter: grayscale(100%) brightness(30%);
+}
+
+#work>#gallery>div {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+}
+
+#work>#gallery>div section {
+    flex: 0 0 auto;
+    width: 45%;
+    max-width: 200px;
+    height: fit-content;
+    margin: 6px;
+    background: var(--light);
+}
+
+/* Contact Container & About Container */
+#contact,#about {
+    padding-top: 10px;
+}
+
+#contact #form,#about #quote {
+    width: 80%;
+    max-width: 450px;
+    background: #fff;
+    margin: 40px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .4);
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#about .q {
+    padding-top: 100px;
+}
+
+#contact .q {
+    padding-top: 20px;
+}
+
+#form .main, #about .main {
+    padding: 15px;
+}
+
+#form input,#form textarea {
+    padding: 2px;
+    padding-left: 10px;
+    width: 90%;
+}
+
+#form p , #form h2, #quote h2 {
+    margin: 5px;
+    margin-top: 10px;
+}
+
+#about #quote p {
+    padding: 10px;
+    line-height: 1.69rem;
+}
+
+#about #quote p:before, #about #quote p:after {
+    content: ' ,, ';
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #dc3545;
+    font-family: serif;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#form button {
+    margin: 5px;
+    margin-top: 10px;
+}
+
+#about,#contact {
+    height: auto;
+    background-image: url(../image/saad_al_amin.jpeg);
+    background-size: contain;
+    padding-top: 0 !important;
+}
+
+#about > #main, #contact > #main {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(15px);
+    -moz-backdrop-filter: blur(15px);
+}
+
+/* Footer */
+#footer {
+    width: 100%;
+    height: auto;
+    background: #444444;
+    color: #fff;
+    padding-top: 20px;
+}
+
+#footer #main {
+    width: 100%;
+    max-width: 470px;
+    margin: auto;
+}
+
+#footer p {
+    padding: 2px;
+    text-transform: uppercase;
+    background: #fff;
+    color: #333;
+    margin: 0 auto;
+    width: 150px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-left: auto;
+}
+
+#footer .follow {
+    padding: 20px;
+}
+
+#footer .follow a {
+    display: inline-block;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border: 1.3px solid #fff;
+    border-radius: 100rem;
+    margin-left: 17px;
+    background: transparent;
+}
+
+#footer .follow a img {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 100rem;
+}
+
+#footer .copyright {
+    margin-left: 0%;
+    text-align: center;
+    font-size: 8px !important;
+    padding-bottom: 20px;
+}
+
+#footer .copyright a {
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: inherit;
+}
