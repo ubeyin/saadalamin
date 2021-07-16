@@ -162,7 +162,8 @@ button:hover {
     opacity: 0.7;
 }
 
-input,textarea {
+input,
+textarea {
     display: block;
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
@@ -178,17 +179,20 @@ input,textarea {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-input::-ms-expand,textarea::-ms-expand {
+input::-ms-expand,
+textarea::-ms-expand {
     background-color: transparent;
     border: 0;
 }
 
-input:-moz-focusring,textarea:-moz-focusring {
+input:-moz-focusring,
+textarea:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #495057;
 }
 
-input:focus,textarea:focus {
+input:focus,
+textarea:focus {
     color: #495057;
     background-color: #fff;
     border-color: #ced4da;
@@ -196,27 +200,32 @@ input:focus,textarea:focus {
     box-shadow: 0 0 4px #ced4da;
 }
 
-input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
     color: #6c757d;
     opacity: 1;
 }
 
-input::-moz-placeholder,textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
     color: #6c757d;
     opacity: 1;
 }
 
-input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
     color: #6c757d;
     opacity: 1;
 }
 
-input::-ms-input-placeholder,textarea::-ms-input-placeholder {
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
     color: #6c757d;
     opacity: 1;
 }
 
-input::placeholder,textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: #6c757d;
     opacity: 1;
 }
@@ -297,7 +306,7 @@ select:focus::-ms-value {
     margin: 5px;
     margin-left: 20px;
     display: inline-block;
-    background-image: url("https://yt3.ggpht.com/WZgN7Pgc22KLA-dr-Iv7b1PnkyP6Q0wCjlXC0YnNSShMIkSOweV--vZe0usne2DRTbNaijL-RA=s88-c-k-c0x00ffffff-no-rj");
+    background-image: url("../image/saad.jpg");
     background-size: cover;
 }
 
@@ -342,10 +351,103 @@ select:focus::-ms-value {
     background-attachment: scroll;
 }
 
+#home #left-ctx,
+#home #right-ctx {
+    animation: open .6s linear;
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+        transform: scale(1.105);
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+#home #right-ctx {
+    padding: 5px;
+    width: 39%;
+    position: absolute;
+    right: 8%;
+    top: 39vw;
+    text-align: center;
+}
+
+#home #left-ctx {
+    padding: 5px;
+    width: 39%;
+    position: absolute;
+    left: 14%;
+    top: 100vw;
+}
+
+#home #right-ctx p {
+    font-size: 0.8rem !important;
+}
+
 @media screen and (min-width: 600px) {
     #home>#banner {
         height: 100vw;
         background-size: 100% 100%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    #home #right-ctx {
+        top: 34.0vw;
+    }
+
+    #home #left-ctx {
+        top: 87.0vw;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    #home #right-ctx {
+        top: 23vw;
+    }
+
+    #home #left-ctx {
+        top: 80.0vw;
+    }
+}
+
+@media screen and (min-width: 570px) {
+    #home #right-ctx {
+        top: 29vw;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #home #right-ctx {
+        width: 40%;
+        position: absolute;
+        right: 10%;
+        top: 27.0vw;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    #home #right-ctx {
+        top: 24.0vw;
+    }
+
+    #home #left-ctx {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #home #right-ctx h2 {
+        font-size: 2.5rem !important;
+    }
+
+    #home #right-ctx p {
+        font-size: 1.2rem !important;
     }
 }
 
@@ -429,11 +531,13 @@ img:hover {
 }
 
 /* Contact Container & About Container */
-#contact,#about {
+#contact,
+#about {
     padding-top: 10px;
 }
 
-#contact #form,#about #quote {
+#contact #form,
+#about #quote {
     width: 80%;
     max-width: 450px;
     background: #fff;
@@ -451,17 +555,21 @@ img:hover {
     padding-top: 20px;
 }
 
-#form .main, #about .main {
+#form .main,
+#about .main {
     padding: 15px;
 }
 
-#form input,#form textarea {
+#form input,
+#form textarea {
     padding: 2px;
     padding-left: 10px;
     width: 90%;
 }
 
-#form p , #form h2, #quote h2 {
+#form p,
+#form h2,
+#quote h2 {
     margin: 5px;
     margin-top: 10px;
 }
@@ -471,7 +579,8 @@ img:hover {
     line-height: 1.69rem;
 }
 
-#about #quote p:before, #about #quote p:after {
+#about #quote p:before,
+#about #quote p:after {
     content: ' ,, ';
     font-size: 2.5rem;
     font-weight: bolder;
@@ -486,14 +595,16 @@ img:hover {
     margin-top: 10px;
 }
 
-#about,#contact {
+#about,
+#contact {
     height: auto;
     background-image: url(../image/saad_al_amin.jpeg);
     background-size: contain;
     padding-top: 0 !important;
 }
 
-#about > #main, #contact > #main {
+#about>#main,
+#contact>#main {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .2);
