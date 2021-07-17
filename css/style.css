@@ -343,7 +343,7 @@ select:focus::-ms-value {
 /* Home Container */
 #home>#banner {
     width: 100%;
-    height: 80vh;
+    height: 81vh;
     padding-top: 30px;
     margin-top: 30px;
     background-image: url(../image/saad_al_amin.jpeg);
@@ -391,14 +391,14 @@ select:focus::-ms-value {
 
 @media screen and (min-width: 600px) {
     #home>#banner {
-        height: 100vw;
+        height: 120vw;
         background-size: 100% 100%;
     }
 }
 
 @media screen and (min-width: 450px) {
     #home #right-ctx {
-        top: 34.0vw;
+        top: 44.0vw;
     }
 
     #home #left-ctx {
@@ -629,7 +629,7 @@ img:hover {
 
 #footer #main {
     width: 100%;
-    max-width: 470px;
+    max-width: 770px;
     margin: auto;
 }
 
@@ -647,6 +647,7 @@ img:hover {
 
 #footer .follow {
     padding: 20px;
+    text-align: center;
 }
 
 #footer .follow a {
@@ -655,17 +656,73 @@ img:hover {
     width: 25px;
     height: 25px;
     text-align: center;
-    border: 1.3px solid #fff;
+    border: 1px solid #fff;
     border-radius: 100rem;
     margin-left: 17px;
+    margin-top: 10px;
     background: transparent;
+
 }
 
 #footer .follow a img {
     width: 100%;
     height: 100%;
     background: transparent;
-    border-radius: 100rem;
+    border-radius: 100rem
+}
+
+#footer .follow a:nth-child(1) img {
+    background: #4267B2;
+}
+
+#footer .follow a:nth-child(2) img {
+    background: var(--red);
+}
+
+#footer .follow a:nth-child(3) img {
+    background: #0077b5;
+}
+
+#footer .follow a:nth-child(5) img {
+    background: #86c9ef;
+}
+
+#footer .follow a:nth-child(6) img {
+    background: #1769ff;
+}
+
+#footer .follow a:nth-child(7) img {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+
+}
+
+#footer .follow a:nth-child(8) img {
+    background: linear-gradient(180deg, var(--yellow), var(--orange));
+}
+
+#footer .follow a:nth-child(9) img {
+    background: linear-gradient(180deg, #0077C1, #0DBFF5);
+}
+
+#footer .follow a:nth-child(10) img {
+    background: #1DB954;
+}
+
+#footer .follow a:nth-child(11) img {
+    background: #c2cad7;
+}
+
+
+#footer .follow a:nth-child(12) img {
+    background: #c2ff00;
+}
+
+#footer .follow a:nth-child(13) img {
+    background: #cc2288;
 }
 
 #footer .copyright {
