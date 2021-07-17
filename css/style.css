@@ -383,6 +383,7 @@ select:focus::-ms-value {
     position: absolute;
     left: 14%;
     transform: rotate(2deg);
+    top: 90vw;
 }
 
 #home #right-ctx p {
