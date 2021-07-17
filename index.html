@@ -98,10 +98,14 @@
     </div>
 
     <script>
+        try {
         setInterval(() => {
             document.getElementById("home").style.marginTop = document.getElementById("navbar").clientHeight +
                 "px";
         }, 1);
+        } catch(e){
+            document.getElementById("home").style.marginTop = "40px";
+        }
     </script>
 </body>
 
