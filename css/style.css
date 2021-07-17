@@ -370,7 +370,7 @@ select:focus::-ms-value {
 
 #home #right-ctx {
     padding: 5px;
-    width: 39%;
+    width: 43%;
     position: absolute;
     right: 8%;
     top: 45vw;
@@ -379,7 +379,7 @@ select:focus::-ms-value {
 
 #home #left-ctx {
     padding: 5px;
-    width: 39%;
+    width: 44%;
     position: absolute;
     left: 14%;
     transform: rotate(2deg);
